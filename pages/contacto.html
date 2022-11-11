@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto | Cinthia Faraldo</title>
-    <link rel="stylesheet" href="../css/styles.css"></head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
+</head>
+
 <body>
     <header class="header">
         <div class="logo">
@@ -23,44 +28,40 @@
         </nav>
     </header>
     <main>
-        <section id="contacto">
+        <section class="titulo">
             <div class="container">
                 <h1>Envia un mensaje</h1>
             </div>
-            <div class="container2">
-            <form action="">
-                <div class="container">
-                    <label for="">Nombre</label>
+            <form class="formulario">
+                <div id="contact-details">
+                <label for="customer_name">Nombre</label>
+                <input type="text" name="customer_name" id="customer_name" required>
+                <label for="email_address">Email </label>
+                <input type="email" name="email_address" id="email_address">
+                <label for="phone">Celular </label>
+                <input type="tel" name="phone" id="phone">
                 </div>
-                <div class="container">
-                    <input type="text">
+                <div id="comment-box">
+                    <label for="comments">Mensaje</label>
+                    <textarea name="comments" id="comments" maxlength="500"></textarea>
                 </div>
-                <div class="container">
-                    <label for="">Email</label>
-                </div>
-                <div class="container">
-                    <input type="email" name="" id="">
-                </div>
-                <div class="container">
-                    <label for="">Mensaje</label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                </div>
-                <button>Enviar</button>
-            </div>
-            </form>
+                <button>Submit</button>
+              </form>
         </section>
     </main>
     <footer class="footer">
         <div class="info">
-            <img src="../img/jLJYX2h9.png" alt="">        
+            <img src="../img/jLJYX2h9.png" alt="">
         </div>
         <div class="redes">
             <h3 class="redes__titulo">Seguime en mis redes</h3>
             <div class="redes__iconos">
-            <i class="bi bi-instagram"><a href=""></a></i>
-            <i class="bi bi-whatsapp"><a href=""></a></i>
-        </div>
+                <i class="bi bi-instagram"><a href=""></a></i>
+                <i class="bi bi-whatsapp"><a href=""></a></i>
+            </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -43,6 +43,11 @@ header{
     padding: 15px;
 }
 
+label{
+    font-size: 1em;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
 
 .logo{
     display: flex;
@@ -54,14 +59,6 @@ header{
     display: flex;
     justify-content: space-around;
     gap: 30px;
-}
-
-@media (min-width: 1200px){
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 }
 
 header a{
@@ -206,6 +203,17 @@ button:hover{
         display: flex;
         flex-direction: row;
     }
+    .footer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 footer{
@@ -223,15 +231,6 @@ footer{
     font-size: 35px;
 }
 
-@media (min-width: 1200px){
-    .footer{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    
-    }
-}
-
 
 .sobre-mi .texto{
     width: 50%;
@@ -242,3 +241,79 @@ footer{
     flex-direction: column;
     justify-content: center;
 }
+
+.formulario {
+    display: grid;
+    grid-template-areas: 
+      "contact comments"
+      "... button";
+  	grid-template-rows: 12em 4em;  
+  	grid-template-columns: 20em 1fr;
+    grid-gap: 3em;
+    background: #eee;
+    padding: 1.2em;
+    height: 40vh;
+  }
+  .formulario label  {
+    grid-area: labels;
+  }
+  .formulario input {
+    grid-area: contact;
+   	width: 100%;
+    padding: 1.1em;
+    border: none;
+    margin-bottom: 1em;
+  }
+  .formulario textarea {
+   min-height: calc(100% - 2em);
+   width: 100%;
+   border: none;
+  }
+  #contact-details {
+   grid-area: contact;
+  }
+  #comment-box {
+   grid-area: comments;
+  }
+  .formulario button {
+    grid-area: button;
+    border: 0;
+  }
+
+  .container{ 
+    text-align: center;
+    height: 10vh;
+    padding: 5px;
+  }
+
+  #sobre-mi{
+    background-color:  rgb(30, 30, 30);
+    display: flex;
+    padding: 30px;
+    gap: 500px;
+    text-align: end;
+    color: white;
+  }
+
+
+
+  #yo{
+    padding: 50px;
+    padding-right: 400px;
+    text-align: center;
+  }
+
+  #sobre-mi img{
+    border-radius: 5px;
+  }
+
+  #tips{
+    background-color:  rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+    padding: 50px;
+  }
+
+  .tip{
+    padding: 20px;
+  }
