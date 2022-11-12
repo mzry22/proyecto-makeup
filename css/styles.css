@@ -1,320 +1,279 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    margin: 0%;
+body {
+  margin: 0%;
 }
 
-ul,ol{
-    list-style: none;
+ul, ol {
+  list-style: none;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-h1{ 
-    font-size: 3.5em;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-h2{ 
-    font-size: 2.5em;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-}
-h3{ 
-    font-size: 2em;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-}
-p{
-     font-size: 1.25em;
-     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-    }
-
-
-
-header{
-    background-color: rgb(255, 255, 255);
-    padding: 15px;
+h1 {
+  font-size: 3.5em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-label{
-    font-size: 1em;
-    font-weight: bold;
-    padding-bottom: 15px;
+h2 {
+  font-size: 2.5em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.logo{
-    display: flex;
-    justify-content: center;
+h3 {
+  font-size: 2em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-
-.navbar__lista{
-    display: flex;
-    justify-content: space-around;
-    gap: 30px;
+p {
+  font-size: 1.25em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-header a{
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
+.carta {
+  border: 2px solid white;
+  margin: 30px;
+  overflow: hidden;
+  gap: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 400px;
+  height: 600px;
+  transition-duration: 1s;
+}
+.carta:hover {
+  box-shadow: 0px 1px 10px;
+  transform: scale(1.13);
+}
+.carta__img {
+  width: 100%;
+  height: 80%;
 }
 
-a:hover{
-    color: blueviolet;
+.cartas {
+  display: flex;
+}
+.cartas__titulo {
+  text-align: center;
 }
 
-li:hover{
-    border-bottom: 2px solid blueviolet;
-}
-
-button{
-    font-size: 1em;
-    font-weight: bold;
-    padding: 10px 30px;
-    border-radius: 10px;
-    border: 2px solid rgba(0, 0, 0, 0.199);
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.685);
-    color: white;
-    background-color: blueviolet;
-}
-
-button:hover{
-    background-color: rgb(101, 33, 165);
-}
-
-.carousel-item img{
-    object-fit: cover;
-    object-position: center;
-    height: 90vh;
-    overflow: hidden;
-}
-
-#carouselfade{
-    height: 90vh;
-}
-
-.carousel-inner{
-    height: 90vh;
-}
-
-.banner{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 90vh;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url(/img/banner.jfif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-.banner h1{
-    color: white;
-}
-
-/* --- estilos --- */
-
-.estilos{
-    padding: 15px;
-    background-color: rgb(30, 30, 30);
-    color: white;
-    text-align: center;
-}
-
-.carta{
-    border: 2px solid white;
-    margin: 30px;
-    overflow: hidden;
-    gap: 20px;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-width: 400px;
-    height: 600px;
-    transition-duration: 1s;
-}
-
-.carta:hover{
-    box-shadow: 0px 1px 10px;
-    transform: scale(1.13);
-}
-
-.carta__img{
-    width: 100%;
-    height: 80%;
-}
-
-.cartas{
-    display: flex;
-}
-
-.cartas__titulo{
-    text-align: center;
-}
-
-@media (max-width: 375px){
-    .cartas{
-        display: grid;
-    }
-    .carta{
-        min-width: 300px;
-        overflow: hidden;
-    }
-}
-
-.maquillajes{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-    padding: 15px;
-}
-
-.maquillaje__img{
+@media (max-width: 375px) {
+  .cartas {
+    display: grid;
+  }
+  .carta {
     min-width: 300px;
-    height: 300px;
-    transition-duration: 1s;
-    border-radius: 30px;
+    overflow: hidden;
+  }
+}
+button {
+  font-size: 1em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.199);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.685);
+  color: white;
+  background-color: blueviolet;
+}
+button:hover {
+  background-color: rgb(101, 33, 165);
 }
 
-.maquillaje__img:hover{
-    transform: scale(1.1);
-    box-shadow: 0px 1px 10px;
-
+.navbar__lista {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
 }
 
-@media (min-width: 1200px){
-    .maquillajes{
-        display: flex;
-        flex-direction: row;
-    }
-    .footer{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    
-    }
-    .header{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
+li:hover {
+  border-bottom: 2px solid blueviolet;
 }
 
-footer{
-    background-color: rgb(255, 255, 255);
-    margin-top: 20px;
-    padding: 15px;
+.redes__iconos {
+  display: flex;
+  justify-content: space-around;
 }
-
-.redes__iconos{
-    display: flex;
-    justify-content: space-around;
-}
-
-.redes__iconos i{
-    font-size: 35px;
-}
-
-
-.sobre-mi .texto{
-    width: 50%;
-    max-width: 600px;
-    text-align: initial;
-    padding-left: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.redes__iconos i {
+  font-size: 35px;
 }
 
 .formulario {
-    display: grid;
-    grid-template-areas: 
-      "contact comments"
-      "... button";
-  	grid-template-rows: 12em 4em;  
-  	grid-template-columns: 20em 1fr;
-    grid-gap: 3em;
-    background: #eee;
-    padding: 1.2em;
-    height: 40vh;
-  }
-  .formulario label  {
-    grid-area: labels;
-  }
-  .formulario input {
-    grid-area: contact;
-   	width: 100%;
-    padding: 1.1em;
-    border: none;
-    margin-bottom: 1em;
-  }
-  .formulario textarea {
-   min-height: calc(100% - 2em);
-   width: 100%;
-   border: none;
-  }
-  #contact-details {
-   grid-area: contact;
-  }
-  #comment-box {
-   grid-area: comments;
-  }
-  .formulario button {
-    grid-area: button;
-    border: 0;
-  }
+  display: grid;
+  grid-template-areas: "contact comments" "... button";
+  grid-template-rows: 12em 4em;
+  grid-template-columns: 20em 1fr;
+  grid-gap: 3em;
+  background: #eee;
+  padding: 1.2em;
+  height: 40vh;
+}
+.formulario label {
+  grid-area: labels;
+}
+.formulario input {
+  grid-area: contact;
+  width: 100%;
+  padding: 1.1em;
+  border: none;
+  margin-bottom: 1em;
+}
+.formulario textarea {
+  min-height: calc(100% - 2em);
+  width: 100%;
+  border: none;
+}
+.formulario button {
+  grid-area: button;
+  border: 0;
+}
 
-  .container{ 
-    text-align: center;
-    height: 10vh;
-    padding: 5px;
-  }
+#comment-box {
+  grid-area: comments;
+}
 
-  #sobre-mi{
-    background-color:  rgb(30, 30, 30);
+.container {
+  text-align: center;
+  height: 10vh;
+  padding: 5px;
+}
+
+.estilos {
+  padding: 15px;
+  background-color: rgb(30, 30, 30);
+  color: white;
+  text-align: center;
+}
+
+.maquillajes {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 15px;
+}
+
+.maquillaje__img {
+  min-width: 300px;
+  height: 300px;
+  transition-duration: 1s;
+  border-radius: 30px;
+}
+.maquillaje__img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 1px 10px;
+}
+
+@media (min-width: 1200px) {
+  .maquillajes {
     display: flex;
-    padding: 30px;
-    gap: 500px;
-    text-align: end;
-    color: white;
+    flex-direction: row;
   }
-
-
-
-  #yo{
-    padding: 50px;
-    padding-right: 400px;
-    text-align: center;
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
-
-  #sobre-mi img{
-    border-radius: 5px;
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
+}
+header {
+  background-color: rgb(255, 255, 255);
+  padding: 15px;
+}
+header a {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+header a:hover {
+  color: blueviolet;
+}
 
-  #tips{
-    background-color:  rgb(30, 30, 30);
-    color: white;
-    text-align: center;
-    padding: 50px;
-  }
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/banner.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.banner h1 {
+  color: white;
+}
 
-  .tip{
-    padding: 20px;
-  }
+.carousel-item img {
+  object-fit: cover;
+  object-position: center;
+  height: 90vh;
+  overflow: hidden;
+}
+
+#carouselfade {
+  height: 90vh;
+}
+
+.carousel-inner {
+  height: 90vh;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+#sobre-mi {
+  background-color: rgb(30, 30, 30);
+  display: flex;
+  padding: 30px;
+  gap: 500px;
+  text-align: end;
+  color: white;
+}
+#sobre-mi img {
+  border-radius: 5px;
+}
+
+#yo {
+  padding: 50px;
+  padding-right: 400px;
+  text-align: center;
+}
+
+.sobre-mi .texto {
+  width: 50%;
+  max-width: 600px;
+  text-align: initial;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#tips {
+  background-color: rgb(30, 30, 30);
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+
+.tip {
+  padding: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

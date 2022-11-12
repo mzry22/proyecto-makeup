@@ -1,0 +1,27 @@
+#sobre-mi{
+    background-color:  rgb(30, 30, 30);
+    display: flex;
+    padding: 30px;
+    gap: 500px;
+    text-align: end;
+    color: white;
+    & img{
+        border-radius: 5px;
+    }
+  }
+
+  #yo{
+    padding: 50px;
+    padding-right: 400px;
+    text-align: center;
+ }
+
+ .sobre-mi .texto{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
