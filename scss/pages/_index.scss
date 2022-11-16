@@ -7,7 +7,7 @@ header{
         font-weight: bold;
         color: black;
         &:hover{
-            color: blueviolet;
+            color: $color-resaltador;
     }
 }
 }
@@ -27,7 +27,7 @@ header{
     background-size: cover;
     background-position: center center;
     & h1{
-        color: white;
+        color: $color-secundario;
     }
 }
 
