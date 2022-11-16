@@ -51,3 +51,26 @@ header{
     display: flex;
     justify-content: center;
 }
+
+.titulo__principal{
+    visibility: hidden;
+    position: absolute;
+}
+
+@media (max-width: 375px){
+    .cartas{
+        display: grid;
+    }
+    .carta{
+        min-width: 300px;
+        overflow: hidden;
+    }
+    .navbar__lista{
+        display: grid;
+        gap: 10px;
+        grid-auto-flow: row;
+        justify-items: center;
+        align-items: center;
+        width: 375px;
+      }
+}

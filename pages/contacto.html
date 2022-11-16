@@ -28,26 +28,35 @@
         </nav>
     </header>
     <main>
-        <section class="titulo">
-            <div class="container">
-                <h1>Envia un mensaje</h1>
+
+            <div class="container mt-5">
+                <h1>Envia un mensaje!</h1>
+                <form class="formulario row g-3">
+                  <div class="col-md-6">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="firstName" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="lastName" required>
+                  </div>
+                  <div class="col-md-8">
+                    <label for="emailInfo" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="emailInfo" required>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="phoneNumber" class="form-label">Celular</label>
+                    <input type="text" class="form-control" id="phoneNumber" placeholder="099999999">
+                  </div>
+                  <div class="col-md-12">
+                    <label for="comments" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="comments" rows="3" required></textarea>
+                  </div>
+                  <div class="col-md-12">
+                    <button type="submit" class="btn">Enviar</button>
+                  </div>
+                </form>
             </div>
-            <form class="formulario">
-                <div id="contact-details">
-                <label for="customer_name">Nombre</label>
-                <input type="text" name="customer_name" id="customer_name" required>
-                <label for="email_address">Email </label>
-                <input type="email" name="email_address" id="email_address">
-                <label for="phone">Celular </label>
-                <input type="tel" name="phone" id="phone">
-                </div>
-                <div id="comment-box">
-                    <label for="comments">Mensaje</label>
-                    <textarea name="comments" id="comments" maxlength="500"></textarea>
-                </div>
-                <button>Enviar</button>
-              </form>
-        </section>
     </main>
     <footer class="footer">
         <div class="info">

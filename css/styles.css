@@ -36,16 +36,21 @@ p {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .carta {
   border: 2px solid white;
   margin: 30px;
   overflow: hidden;
-  gap: 20px;
+  gap: 5px;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 400px;
+  width: 500px;
   height: 600px;
   transition-duration: 1s;
 }
@@ -54,26 +59,21 @@ p {
   transform: scale(1.13);
 }
 .carta__img {
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
   height: 80%;
 }
 
 .cartas {
+  overflow: hidden;
   display: flex;
+  justify-content: center;
 }
 .cartas__titulo {
   text-align: center;
 }
 
-@media (max-width: 375px) {
-  .cartas {
-    display: grid;
-  }
-  .carta {
-    min-width: 300px;
-    overflow: hidden;
-  }
-}
 button {
   font-size: 1em;
   font-weight: bold;
@@ -107,43 +107,15 @@ li:hover {
 }
 
 .formulario {
-  display: grid;
-  grid-template-areas: "contact comments" "... button";
-  grid-template-rows: 12em 4em;
-  grid-template-columns: 20em 1fr;
-  grid-gap: 3em;
   background: #eee;
   padding: 1.2em;
-  height: 40vh;
-}
-.formulario label {
-  grid-area: labels;
-}
-.formulario input {
-  grid-area: contact;
-  width: 100%;
-  padding: 1.1em;
-  border: none;
-  margin-bottom: 1em;
-}
-.formulario textarea {
-  min-height: calc(100% - 2em);
-  width: 100%;
-  border: none;
-}
-.formulario button {
-  grid-area: button;
-  border: 0;
-}
-
-#comment-box {
-  grid-area: comments;
+  height: 60vh;
 }
 
 .container {
   text-align: center;
-  height: 10vh;
-  padding: 5px;
+  height: 80vh;
+  padding: 15px;
 }
 
 .estilos {
@@ -218,8 +190,10 @@ header a:hover {
 }
 
 .carousel-item img {
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   height: 90vh;
   overflow: hidden;
 }
@@ -237,6 +211,28 @@ header a:hover {
   justify-content: center;
 }
 
+.titulo__principal {
+  visibility: hidden;
+  position: absolute;
+}
+
+@media (max-width: 375px) {
+  .cartas {
+    display: grid;
+  }
+  .carta {
+    min-width: 300px;
+    overflow: hidden;
+  }
+  .navbar__lista {
+    display: grid;
+    gap: 10px;
+    grid-auto-flow: row;
+    justify-items: center;
+    align-items: center;
+    width: 375px;
+  }
+}
 #sobre-mi {
   background-color: rgb(30, 30, 30);
   display: flex;
@@ -274,6 +270,4 @@ header a:hover {
 
 .tip {
   padding: 20px;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */
