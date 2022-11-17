@@ -2,7 +2,7 @@ header{
     background-color: rgb(255, 255, 255);
     padding: 15px;
     & a{
-        padding: 10px 20px;
+        padding: 10px 6px;
         text-decoration: none;
         font-weight: bold;
         color: black;
@@ -73,4 +73,26 @@ header{
         align-items: center;
         width: 375px;
       }
+}
+
+@media (min-width: 1200px){
+    .maquillajes{
+        display: flex;
+        flex-direction: row;
+    }
+    .footer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header a{
+        padding: 10px 20px;
+    }
 }

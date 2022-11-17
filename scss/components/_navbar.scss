@@ -1,7 +1,9 @@
 .navbar__lista{
     display: flex;
     justify-content: space-around;
-    gap: 30px;
+    gap: 3px;
+    margin: 0;
+    padding: 0;
 }
 
 li:hover{

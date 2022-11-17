@@ -91,7 +91,9 @@ button:hover {
 .navbar__lista {
   display: flex;
   justify-content: space-around;
-  gap: 30px;
+  gap: 3px;
+  margin: 0;
+  padding: 0;
 }
 
 li:hover {
@@ -116,6 +118,9 @@ li:hover {
   text-align: center;
   height: 80vh;
   padding: 15px;
+}
+.container__titulo {
+  padding-bottom: 20px;
 }
 
 .estilos {
@@ -144,29 +149,12 @@ li:hover {
   box-shadow: 0px 1px 10px;
 }
 
-@media (min-width: 1200px) {
-  .maquillajes {
-    display: flex;
-    flex-direction: row;
-  }
-  .footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
 header {
   background-color: rgb(255, 255, 255);
   padding: 15px;
 }
 header a {
-  padding: 10px 20px;
+  padding: 10px 6px;
   text-decoration: none;
   font-weight: bold;
   color: black;
@@ -231,6 +219,26 @@ header a:hover {
     justify-items: center;
     align-items: center;
     width: 375px;
+  }
+}
+@media (min-width: 1200px) {
+  .maquillajes {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header a {
+    padding: 10px 20px;
   }
 }
 #sobre-mi {
