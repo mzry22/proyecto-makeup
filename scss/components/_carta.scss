@@ -23,7 +23,7 @@
 
 .cartas{
     overflow: hidden;
-    display: flex;
+    display: grid;
     justify-content: center;
     &__titulo{
         text-align: center;

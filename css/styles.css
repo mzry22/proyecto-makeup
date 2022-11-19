@@ -67,7 +67,7 @@ img {
 
 .cartas {
   overflow: hidden;
-  display: flex;
+  display: grid;
   justify-content: center;
 }
 .cartas__titulo {
@@ -205,9 +205,6 @@ header a:hover {
 }
 
 @media (max-width: 375px) {
-  .cartas {
-    display: grid;
-  }
   .carta {
     min-width: 300px;
     overflow: hidden;
@@ -221,33 +218,11 @@ header a:hover {
     width: 375px;
   }
 }
-@media (min-width: 1200px) {
-  .maquillajes {
-    display: flex;
-    flex-direction: row;
-  }
-  .footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .header a {
-    padding: 10px 20px;
-  }
-}
 #sobre-mi {
   background-color: rgb(30, 30, 30);
-  display: flex;
   padding: 30px;
-  gap: 500px;
-  text-align: end;
   color: white;
+  text-align: center;
 }
 #sobre-mi img {
   border-radius: 5px;
@@ -255,7 +230,6 @@ header a:hover {
 
 #yo {
   padding: 50px;
-  padding-right: 400px;
   text-align: center;
 }
 
@@ -278,4 +252,36 @@ header a:hover {
 
 .tip {
   padding: 20px;
+}
+
+@media (min-width: 1200px) {
+  .maquillajes {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header a {
+    padding: 10px 20px;
+  }
+  .cartas {
+    display: flex;
+  }
+  #sobre-mi {
+    display: flex;
+    gap: 500px;
+    text-align: end;
+  }
+  #yo {
+    padding-right: 400px;
+  }
 }/*# sourceMappingURL=main.css.map */

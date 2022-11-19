@@ -58,9 +58,6 @@ header{
 }
 
 @media (max-width: 375px){
-    .cartas{
-        display: grid;
-    }
     .carta{
         min-width: 300px;
         overflow: hidden;
@@ -75,24 +72,4 @@ header{
       }
 }
 
-@media (min-width: 1200px){
-    .maquillajes{
-        display: flex;
-        flex-direction: row;
-    }
-    .footer{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    
-    }
-    .header{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .header a{
-        padding: 10px 20px;
-    }
-}
+

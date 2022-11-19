@@ -8,3 +8,36 @@
   .tip{
     padding: 20px;
   }
+
+  @media (min-width: 1200px){
+    .maquillajes{
+        display: flex;
+        flex-direction: row;
+    }
+    .footer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header a{
+        padding: 10px 20px;
+    }
+    .cartas{
+        display: flex;
+    }
+    #sobre-mi{
+        display: flex;
+        gap: 500px;
+        text-align: end;
+    }
+    #yo{
+        padding-right: 400px;
+    }
+}
