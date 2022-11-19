@@ -88,6 +88,10 @@ button:hover {
   background-color: rgb(101, 33, 165);
 }
 
+.navbar {
+  justify-content: center;
+}
+
 .navbar__lista {
   display: flex;
   justify-content: space-around;
